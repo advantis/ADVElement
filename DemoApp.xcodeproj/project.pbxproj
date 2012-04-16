@@ -21,6 +21,7 @@
 		6AEAF795153B5A2500715367 /* SearchEngineType.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEAF795153B5A2500715366 /* SearchEngineType.m */; };
 		6AEAF795153B5A2500715369 /* BasicSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEAF795153B5A2500715368 /* BasicSearch.m */; };
 		6AEAF795153B5A250071536F /* ADVElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEAF795153B5A250071536E /* ADVElement.m */; };
+		6AEAF795153B5A2500715374 /* ADVNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEAF795153B5A2500715373 /* ADVNetworkActivityIndicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		6AEAF795153B5A250071536A /* BasicSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicSearch.h; sourceTree = "<group>"; };
 		6AEAF795153B5A250071536D /* ADVElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADVElement.h; path = ../../ADVElement.h; sourceTree = "<group>"; };
 		6AEAF795153B5A250071536E /* ADVElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADVElement.m; path = ../../ADVElement.m; sourceTree = "<group>"; };
+		6AEAF795153B5A2500715372 /* ADVNetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVNetworkActivityIndicator.h; sourceTree = "<group>"; };
+		6AEAF795153B5A2500715373 /* ADVNetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVNetworkActivityIndicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				6AEAF795153B5A250071536C /* ADVElement */,
+				6AEAF795153B5A2500715371 /* ADVNetworkActivityIndicator */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -192,6 +196,15 @@
 				6A34947E153C87DE0000CF15 /* README.md */,
 			);
 			name = Documentation;
+			sourceTree = "<group>";
+		};
+		6AEAF795153B5A2500715371 /* ADVNetworkActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				6AEAF795153B5A2500715373 /* ADVNetworkActivityIndicator.m */,
+				6AEAF795153B5A2500715372 /* ADVNetworkActivityIndicator.h */,
+			);
+			path = ADVNetworkActivityIndicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +278,7 @@
 				6AEAF795153B5A2500715367 /* SearchEngineType.m in Sources */,
 				6AEAF795153B5A2500715369 /* BasicSearch.m in Sources */,
 				6AEAF795153B5A250071536F /* ADVElement.m in Sources */,
+				6AEAF795153B5A2500715374 /* ADVNetworkActivityIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

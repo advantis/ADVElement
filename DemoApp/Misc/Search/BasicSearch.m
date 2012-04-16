@@ -3,6 +3,7 @@
 //
 
 #import "BasicSearch.h"
+#import "ADVNetworkActivityIndicator.h"
 
 @implementation BasicSearch
 
@@ -38,8 +39,12 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         NSString *query = [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         NSURL *url = [NSURL URLWithString:[self.suggestionsUrl stringByAppendingString:query]];
+
+        ADVNetworkActivityIndicator *networkIndicator = [ADVNetworkActivityIndicator sharedIndicator];
+        [networkIndicator start];
         NSData *responseData = [NSData dataWithContentsOfURL:url];
-        
+        [networkIndicator stop];
+
         NSArray *suggestions = [self suggestionsFromData:responseData];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.delegate searchEngine:self didLoadSuggestions:suggestions forString:string];
